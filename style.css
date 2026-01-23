@@ -36,7 +36,38 @@ div {
     align-items: flex-start;
 }
 
+.messageArea {
+    display: flex;
+    width: 93%;
+    height: inherit;
+    /* border-radius: inherit; */
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+    background-color: inherit;
+    align-items: inherit;
+}
+
+.chats {
+    width: 70%;
+    height: inherit;
+    
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0px;
+    border-bottom-width: 0.5px;
+
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/*--------------------------------- SIDEBAR SECTION ---------------------------------*/
+
 .sidebar {
+    display: flex;
     width: 7%;
     height: inherit;
     /* border-radius: inherit; */
@@ -58,23 +89,153 @@ div {
     overflow: auto;
     /* padding: 10px;   */
 
-    align-items: inherit;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.messageArea {
+.colouredButtons {
+    width: 100%;
+    height: 3.5%;
+    align-items: center;
+    flex-direction: row;
+
+    /* background-color: #1a1a1a;
+    border-radius: inherit; */
+}
+
+.redButton {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fe5f57;
+    align-items: flex-start;
+    margin: 6px;
+}
+
+.yellowButton {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #febc2e;
+    margin: 6px;
+    /* margin-right: auto; */
+}
+
+.greenButton {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #28c840;
+    margin: 6px;
+    /* margin-right: auto; */
+}
+
+.otherButtons {
     display: flex;
-    width: 93%;
-    height: inherit;
-    /* border-radius: inherit; */
-    border-bottom-left-radius: 0%;
-    border-top-left-radius: 0%;
-    border-bottom-right-radius: inherit;
-    border-top-right-radius: inherit;
-    background-color: inherit;
+    width: 100%;
+    height: 97.5%;
     align-items: inherit;
+    flex-direction: column;
+    /* background-color: red; */
+    border-radius: inherit;
 }
 
+.otherButtonsPartOne {
+    display: flex;
+    width: inherit;
+    height: 25%;
+    background-color: red;
+
+}
+
+.otherButtonsPartThree {
+    display: flex;
+    width: inherit;
+    height: 50%;
+    background-color: green;
+}
+
+.messageIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.phoneIcon {
+    width: 24px;
+    height: 24px; 
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.atIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.otherButtonsPartTwo {
+    display: flex;
+    width: inherit;
+    height: 25%;
+    background-color: blue;
+}
+
+.archievedIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.starIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.settingsIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.galleryIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*--------------------------------- CONTACT SECTION ---------------------------------*/
 .contact {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     height: inherit;
     border: rgb(92, 86, 86);
@@ -85,17 +246,16 @@ div {
     border-bottom-width: 0.5px;
 }
 
-.chats {
-    width: 70%;
-    height: inherit;
-    
-    border: rgb(92, 86, 86);
-    border-style: solid;
-    border-right-width: 0.5px;
-    border-top-width: 0.5px;
-    border-left-width: 0px;
-    border-bottom-width: 0.5px;
+.contactPartOne {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: brown;
+}
 
-    border-bottom-right-radius: inherit;
-    border-top-right-radius: inherit;
+.contactPartTwo {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    background-color: pink;
 }
