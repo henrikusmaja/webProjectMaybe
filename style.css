@@ -15,12 +15,28 @@ body {
     too far too the left or up or down or right, because the edge is far away, so there's no way we're gonna reach the white
     edge things xD
     */
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-size: 13px;
+    margin-left: 10px;
+    color: #afb0b0;
+}
+
+h3 {
+    font-size: 15px;
+    color: #afb0b0;
+    /* margin-left: 10px; */
 }
 
 div {
     display: flex;
-    justify-content: center; /*flexbox*/
-    align-items: center; /*flexbox*/
+    justify-content: center;
+    /*flexbox*/
+    align-items: center;
+    /*flexbox*/
     /*flexbox only works in parent container, cant work in child*/
     height: 100vh;
     /* border: 1px; */
@@ -52,7 +68,7 @@ div {
 .chats {
     width: 70%;
     height: inherit;
-    
+
     border: rgb(92, 86, 86);
     border-style: solid;
     border-right-width: 0.5px;
@@ -135,7 +151,7 @@ div {
     width: 100%;
     height: 97.5%;
     align-items: inherit;
-    flex-direction: column;
+    flex-direction: inherit;
     /* background-color: red; */
     border-radius: inherit;
 }
@@ -144,15 +160,51 @@ div {
     display: flex;
     width: inherit;
     height: 25%;
-    background-color: red;
+    /* background-color: red; */
+    flex-direction: column;
+    /* border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0.5px; */
+}
 
+.otherButtonsPartTwo {
+    display: flex;
+    width: inherit;
+    height: 16.5%;
+    /* background-color: blue; */
+    flex-direction: column;
+
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0px;
+    border-top-width: 0.5px;
+    border-left-width: 0px;
+    border-bottom-width: 0.5px;
+
+    border-image: linear-gradient(to right,
+            transparent 15%,
+            rgb(92, 86, 86) 15%,
+            rgb(92, 86, 86) 85%,
+            transparent 85%) 100% 1;
 }
 
 .otherButtonsPartThree {
     display: flex;
     width: inherit;
-    height: 50%;
-    background-color: green;
+    height: 42%;
+    /* background-color: green; */
+    flex-direction: column;
+}
+
+.otherButtonsPartFour {
+    display: flex;
+    width: inherit;
+    height: 16.5%;
+    /* background-color: purple; */
+    flex-direction: column;
 }
 
 .messageIcon {
@@ -163,16 +215,18 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
 .phoneIcon {
     width: 24px;
-    height: 24px; 
+    height: 24px;
     fill: none;
     stroke: #afb0b0;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
 .atIcon {
@@ -183,14 +237,16 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
-.otherButtonsPartTwo {
+/* .otherButtonsPartTwo {
     display: flex;
     width: inherit;
     height: 25%;
     background-color: blue;
-}
+    flex-direction: column;
+} */
 
 .archievedIcon {
     width: 24px;
@@ -200,6 +256,7 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
 .starIcon {
@@ -210,7 +267,16 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
+
+/* .otherButtonsPartFour {
+    display: flex;
+    width: inherit;
+    height: 16.5%;
+    background-color: purple;
+    flex-direction: column;
+} */
 
 .settingsIcon {
     width: 24px;
@@ -220,6 +286,7 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
 .galleryIcon {
@@ -230,6 +297,7 @@ div {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 12px;
 }
 
 /*--------------------------------- CONTACT SECTION ---------------------------------*/
@@ -249,13 +317,265 @@ div {
 .contactPartOne {
     display: flex;
     width: 100%;
-    height: 5%;
-    background-color: brown;
+    height: 6%;
+    /* background-color: brown; */
+}
+
+.contactPartOneSectionOne {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: blue; */
+}
+
+.contactPartOneSectionTwo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+
+.chatsIcon {
+    font-size: 15px;
+    align-items: flex-start;
+    margin: 12px;
+    color: #dddd;
+}
+
+.noSelect {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.restartIcon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #afb0b0;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin: 12px;
+    flex-shrink: 0; /* so this element is not gonna get squished */
+    margin: 12px;
 }
 
 .contactPartTwo {
     display: flex;
+    width: 95%;
+    height: 4%;
+    /* background-color: pink; */
+    flex-direction: row;
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0.5px;
+
+    border-radius: 5px;
+    margin: 4px;
+}
+.searchIconPart {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.searchIcon {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: #858888;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin: 12px;
+    flex-shrink: 0; /* so this element is not gonna get squished */
+}
+
+.searchTypePart {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: lawngreen; */
+
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0px;
+
+    border-image: linear-gradient(to bottom,
+            transparent 15%,
+            rgb(92, 86, 86) 15%,
+            rgb(92, 86, 86) 85%,
+            transparent 85%) 1;
+
+}
+
+.contactPartThree {
+    display: flex;
     width: 100%;
-    height: 95%;
-    background-color: pink;
+    height: 5%;
+    /* color: #858888; */
+    /* background-color: yellow; */
+}
+
+.allIconPart {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #113528;
+
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0.5px;
+
+    border-radius: 100px;
+    margin: 3px;
+}
+
+.unreadIconPart {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242626;
+
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0.5px;
+
+    border-radius: 100px;
+    margin: 3px;
+}
+
+.favIconPart {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242626;
+    
+    border: rgb(92, 86, 86);
+    border-style: solid;
+    border-right-width: 0.5px;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-bottom-width: 0.5px;
+
+    border-radius: 100px;
+    margin: 3px;
+}
+
+.contactPartFour {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    /* background-color: green; */
+
+    flex-direction: column;
+}
+
+.whadupContact {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    /* background-color: #fff; */
+
+    border: #fe5f57;
+    border-style: solid;
+    flex-direction: row;
+}
+
+.picPart {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+
+    /* background-color: #fe5f57; */
+}
+
+.whadupContact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.whadupContact h3 {
+    margin-left: 10px;
+}
+
+.whadupContact p {
+    margin-left: 10px ;
+}
+
+.picContactMessageTimePart {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactAndLastTimePart {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    /* align-items: center; */
+    background-color: yellow;
+}
+
+.contactName {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timeSent {
+    width: 30%;
+    height: 100%;
+    background-color: violet;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lastMessagePart {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: green;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    white-space: nowrap;
+    overflow: hidden;
 }
