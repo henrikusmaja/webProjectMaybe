@@ -496,7 +496,9 @@ div {
     height: 85%;
     /* background-color: green; */
 
+    /* margin-top: 5px; */
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 .whadupContact {
@@ -505,9 +507,10 @@ div {
     height: 10%;
     /* background-color: #fff; */
 
-    border: #fe5f57;
-    border-style: solid;
+    /* border: #fe5f57;
+    border-style: solid; */
     flex-direction: row;
+    margin-top: 7px;
 }
 
 .picPart {
@@ -545,25 +548,32 @@ div {
 .contactAndLastTimePart {
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 35%;
     flex-direction: row;
     /* align-items: center; */
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+
+.emptyConstactMessageTimePart {
+    height: 15%;
+    width: 100%;
+    /* background-color: grey; */
 }
 
 .contactName {
     display: flex;
     width: 70%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0px;
 }
 
 .timeSent {
     width: 30%;
     height: 100%;
-    background-color: violet;
+    /* background-color: violet; */
     flex-direction: column;
     align-items: flex-end;
 }
@@ -571,11 +581,31 @@ div {
 .lastMessagePart {
     display: flex;
     width: 100%;
-    height: 50%;
-    background-color: green;
+    height: 35%;
+    /* background-color: green; */
+    flex-direction: row;
+    align-items: center;
+}
+
+.lastMessage {
+    display: flex;
+    width: inherit;
+    height: 100%;
     flex-direction: column;
     align-items: flex-start;
-    
+
     white-space: nowrap;
     overflow: hidden;
+    padding-left: 10px;
+    padding-right: 15%;
+
+    /* background-color: antiquewhite; */
+}
+
+.lastMessage p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
 }
