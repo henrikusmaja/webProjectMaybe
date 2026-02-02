@@ -12,7 +12,7 @@ function chatAppearsFunc() {
     message.classList.remove('hidden');
 }
 
-// to refresh the page
+// to reload the page
 refreshButton.addEventListener("click", refreshPageFunc, true);
 
 function refreshPageFunc() {
