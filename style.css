@@ -850,6 +850,13 @@ img {
     object-fit: contain;
 }
 
+.githubPic {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
 .hidden {
     display: none;
 }
