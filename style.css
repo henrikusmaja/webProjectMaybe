@@ -709,11 +709,16 @@ img {
 }
 
 .chatPartTwo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     height: 88%;
     background-image: url(Images/whadupBackground.png);
     background-size: cover;
     background-position: center;
+    overflow-y: scroll;
 }
 
 .chatPartThree{
@@ -793,12 +798,56 @@ img {
     height: 100%;
     /* background-color: blue; */
 }
-
-.chatHenry {
+.chatMessages {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 100%;
-    background-color: #28c840;
+}
+
+.message {
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+.chatBubble {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    padding: 6px 9px;
+    border-radius: 18px;
+}
+
+.chatBubble p {
+    margin: 0;
+}
+
+.theirs {
+    align-items: flex-start;
+    padding-left: 5px;
+}
+
+.theirBubble {
+    background-color: #232626;
+}
+
+.mine {
+    align-items: flex-end;
+    padding-right: 5px;
+}
+
+.myBubble {
+    background-color: #154d38;
+}
+
+.moviePoster {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
 .hidden {
